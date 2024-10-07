@@ -24,6 +24,8 @@ Unregistered user can only view the ,but cannot access the
 # How to apply to your database?
 
 ## Please input the following commands in your command terminal (Ubuntu)
+
+```
 curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg\n
 
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
@@ -31,11 +33,13 @@ sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] h
 apt list --upgradable
 sudo apt install pgadmin4
 sudo -u postgres psql
-
+```
 It is assumed that you have installed pgadmin4 App.
 
 Please input the following in terminal:
+```
 sudo -u postgres psql -U postgres
+```
 Then you will be asked to provide your Ubuntu password.
 Next type "CREATE DATABASE ...... OWNER POSTGRES " in the terminal.
 Typing "\q" whether the database is existed on the table or not.
