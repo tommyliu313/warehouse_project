@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w$5l%2=cc7-xl!79ni9dijtdt6c#v*q7gk7y***1iwtu!a^3#%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '*'
@@ -83,37 +83,15 @@ WSGI_APPLICATION = 'newprojecttrial.wsgi.application'
 
 
 # Tommy Database Settings (If you are Tommy, please remove other database settings)
-#DATABASES = {
-#   'default': {
-#       'ENGINE': 'django.db.backends.postgresql',
-#       'NAME': 'trialproject',
-#       'USER': 'dbadmin',
-#       'PASSWORD':'abc123!',
-#       'HOST': 'localhost'
-#   }
-#
-
-# Danny Database Settings (If you are Danny, please remove other database settings and #, use your own configuration)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trialproject',
-        'USER': 'dbadmin',
-        'PASSWORD':'473261',
-        'HOST': 'localhost'
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'warehouse_project',
+       'USER': 'dbadmin',
+       'PASSWORD':'abc123!',
+       'HOST': 'localhost'
+   }
 }
-
-#Keung Database Settings (If you are Keung, please remove other database settings and #, use your own configuration)
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'trialproject',
-#         'USER': 'dbadmin',
-#         'PASSWORD':'KEUNG123',
-#         'HOST': 'localhost'
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
